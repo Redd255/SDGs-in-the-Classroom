@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linking google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0" />
+    <link rel="stylesheet" href="/css/chatbot.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Header Greetings-->
+        <h2 class="title">Hello, Student</h2>
+        <h4 class="subtitle">I'am Your SDGs ChatBot, How can I help you today?</h4>
+
+        <!-- Suggestion List-->
+        <ul class="suggestion-list">
+            <li class="suggestion">
+                <h4 class="text"> My Daily Quiz about Climat Action</h4>
+                <span class="material-symbols-rounded">draw</span>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">My score in high school</h4>
+                <span class="material-symbols-rounded">draw</span>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">Please provide me with trusted sources for SDG 13</h4>
+                <span class="material-symbols-rounded">lightbulb</span>
+            </li>
+            <li class="suggestion">
+                <h4 class="text">Ideas for an SDG project</h4>
+                <span class="material-symbols-rounded">draw</span>
+            </li>
+        </ul>
+    </header>
+
+    <!--chat list /container-->
+    <div class="chat-list"></div>
+
+    <!-- typing area-->
+    <div class="typing-area">
+        <form action="#" class="typing-form">
+            <div class="input-wrapper">
+                <input type="text" placeholder="Enter a prompt here" class="typing-input" required>
+                <button class=" icon material-symbols-rounded">send</button>
+            </div>
+            <div class="action-buttons">
+                <span id="toggle-theme-button" class="icon material-symbols-rounded">light_mode</span>
+                <span id="delete-chat-button" class="icon material-symbols-rounded">delete</span>
+            </div>
+        </form>
+        <p class="disclaimer-text">
+            SDGs ChatBot Powered by Trusted and Verified Sources
+        </p>
+    </div>
+
+    <script src="/js/chatbot.js"></script>
+</body>
+</html>

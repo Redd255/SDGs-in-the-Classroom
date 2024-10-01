@@ -1,0 +1,81 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    align-items: stretch; 
+}
+
+.login-container {
+    display: flex;
+    width: 100%;
+    height: 100%; 
+    background-color: white;
+}
+
+.left-panel, .right-panel {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.left-panel {
+    background-color: white;
+}
+
+.right-panel {
+    padding: 20px;
+    box-shadow: -1px 0 10px rgba(0,0,0,0.1); 
+}
+
+.student-img {
+    width: 100%;
+    height: auto;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 300px; 
+}
+
+.login-form h2, .login-form p {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.login-form input, .login-form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.signup-text, .trouble-text {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center; 
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

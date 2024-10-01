@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 13 - Climate Action</title>
+    <link rel="stylesheet" href="/css/game.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/game.html">Quiz</a></li>
+                <li><a href="/chatbot.html">SGDs AI</a></li>
+                <li><a href="/leaderboard.html">Leaderboard</a></li>
+                <li><a href="/index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="sliders">
+        <div class="slider-container">
+            <label for="coal">Coal Usage</label>
+            <input type="range" id="coal" min="0" max="100" value="50">
+        </div>
+        <div class="slider-container">
+            <label for="renewables">Renewable Energy</label>
+            <input type="range" id="renewables" min="0" max="100" value="50">
+        </div>
+        <div class="slider-container">
+            <label for="oil">Oil Usage</label>
+            <input type="range" id="oil" min="0" max="100" value="50">
+        </div>
+        <div class="slider-container">
+            <label for="deforestation">Deforestation Rate</label>
+            <input type="range" id="deforestation" min="0" max="100" value="50">
+        </div>
+        <div class="slider-container">
+            <label for="agriculture">Agriculture (Livestock Production)</label>
+            <input type="range" id="agriculture" min="0" max="100" value="50">
+        </div>
+        <div class="slider-container">
+            <label for="industry">Industrial Emissions</label>
+            <input type="range" id="industry" min="0" max="100" value="50">
+        </div>
+        <div class="slider-container">
+            <label for="transport">Transportation Emissions</label>
+            <input type="range" id="transport" min="0" max="100" value="50">
+        </div>
+        <div class="slider-container">
+            <label for="waste">Waste Management (Recycling Rate)</label>
+            <input type="range" id="waste" min="0" max="100" value="50">
+        </div>
+    </div>    
+    
+    <div class="charts-container">
+        <div class="chart">
+            <canvas id="energyChart"></canvas>
+        </div>
+        <div class="chart">
+            <canvas id="emissionsChart"></canvas>
+        </div>
+    </div>
+    
+    <!-- Quiz and Fish Section -->
+    <div class="quiz-fish-container">
+        <div class="quiz-container">
+            <div class="question-box">
+                <div id="question" class="question-text">
+                    What is the longest river in the world?
+                </div>
+            </div>
+            <div class="options">
+                <div class="option" id="optionA" onclick="checkAnswer('A')">A. Nile</div>
+                <div class="option" id="optionB" onclick="checkAnswer('B')">B. Amazon</div>
+                <div class="option" id="optionC" onclick="checkAnswer('C')">C. Mekong</div>
+                <div class="option" id="optionD" onclick="checkAnswer('D')">D. Congo</div>
+            </div>
+        </div>
+        <!-- Fish Image Section -->
+        <div class="fish-section">
+            <img id="fish" src="/media/fish.webp" alt="Healthy Fish">
+        </div>
+    </div>
+    <script src="/js/game.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
