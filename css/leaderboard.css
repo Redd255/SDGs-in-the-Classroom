@@ -49,11 +49,11 @@ header {
 }
 
 .navbar ul li a:hover {
-    background-color: #264653;
+    background-color: #2a9d8f;
 }
 
 .leaderboard-container {
-    background-color: #2E56A1;
+    background-color: #2a9d8f;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
